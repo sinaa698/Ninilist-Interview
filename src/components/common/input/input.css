@@ -1,0 +1,20 @@
+.input-container {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  align-items: flex-end;
+  height: fit-content;
+}
+.input-container__label {
+  font-size: 0.75rem;
+  color: #cccccc;
+  font-weight: 500;
+  margin-left: 0.3rem;
+}
+.input-container__input {
+  width: 15.5rem;
+  height: 1.5rem;
+  background: #cccccc;
+  border-radius: 0.75rem;
+  text-align: left;
+}
