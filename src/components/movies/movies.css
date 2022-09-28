@@ -1,0 +1,20 @@
+.movies {
+  display: flex;
+  flex-direction: column;
+  padding: 0.75rem;
+  border-bottom: 1px solid white;
+  width: 18.75rem;
+}
+.movies .movie {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+}
+.movies .movie .movie__title {
+  color: white;
+  font-size: 1.25rem;
+  font-weight: 900;
+}
+.movies .movie .movie__genre {
+  color: #fb3640;
+}

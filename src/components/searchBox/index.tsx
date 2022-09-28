@@ -5,9 +5,11 @@ const SearchBox = ({
   onChange,
 }: {
   value: string;
-  onChange: (value: string) => void;
+  onChange: (searchInput: React.ChangeEvent<HTMLInputElement>) => void;
 }) => {
-  return <Input label="search" name="search" value={value} onChange={onChange} />;
+  return (
+    <Input label="Search" name="search" value={value} onChange={onChange} />
+  );
 };
 
 export default SearchBox;
