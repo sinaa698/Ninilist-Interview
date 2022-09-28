@@ -1,0 +1,23 @@
+@import "../../styles/styles.less";
+
+.movies {
+  .col();
+  padding: 0.75rem;
+  border-bottom: 1px solid white;
+  width: 18.75rem;
+
+  .movie {
+    .row();
+    gap: 1.5rem;
+
+    .movie__title {
+      color: white;
+      font-size: 1.25rem;
+      font-weight: 900;
+    }
+
+    .movie__genre {
+      color: @red;
+    }
+  }
+}

@@ -3,16 +3,16 @@ import "./input.css";
 
 const Input = ({
   label,
-  value,
   name,
   style,
+  value,
   onChange,
 }: {
   label: string;
   value?: string;
   name: string;
   style?: CSSProperties;
-  onChange: (value: string) => void;
+  onChange: (searchInput: React.ChangeEvent<HTMLInputElement>) => void;
 }) => {
   return (
     <div className="input-container">
@@ -25,6 +25,7 @@ const Input = ({
         value={value}
         dir="ltr"
         style={style}
+        onChange={(searchInput) => onChange(searchInput)}
       />
     </div>
   );
