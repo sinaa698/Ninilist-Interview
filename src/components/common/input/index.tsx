@@ -6,11 +6,13 @@ const Input = ({
   value,
   name,
   style,
+  onChange,
 }: {
   label: string;
   value?: string;
   name: string;
   style?: CSSProperties;
+  onChange: (value: string) => void;
 }) => {
   return (
     <div className="input-container">
