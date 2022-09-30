@@ -5,11 +5,9 @@ const Input = ({
   label,
   name,
   style,
-  value,
   onChange,
 }: {
   label: string;
-  value?: string;
   name: string;
   style?: CSSProperties;
   onChange: (searchInput: React.ChangeEvent<HTMLInputElement>) => void;
@@ -22,7 +20,6 @@ const Input = ({
       <input
         className={"input-container__input"}
         type="text"
-        value={value}
         dir="ltr"
         style={style}
         onChange={(searchInput) => onChange(searchInput)}
