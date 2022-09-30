@@ -1,15 +1,11 @@
 import Input from "../common/input/index";
 
 const SearchBox = ({
-  value,
   onChange,
 }: {
-  value: string;
-  onChange: (searchInput: React.ChangeEvent<HTMLInputElement>) => void;
+  onChange: (searchInput: string) => void;
 }) => {
-  return (
-    <Input label="Search" name="search" value={value} onChange={onChange} />
-  );
+  return <Input label="Search" name="search" onChange={({target:{value}}) => onChange(value)} />;
 };
 
 export default SearchBox;
