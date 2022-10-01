@@ -1,0 +1,23 @@
+@import "../../../styles/styles.less";
+
+.input-container {
+  .col();
+  gap: 6px;
+  align-items: flex-start;
+  height: fit-content;
+
+  &__label {
+    font-size: 2rem;
+    color: @gray;
+    font-weight: 500;
+    margin-left: 0.3rem;
+  }
+
+  &__input {
+    width: 30rem;
+    height: 2rem;
+    background: @gray;
+    border-radius: 0.75rem;
+    text-align: left;
+  }
+}

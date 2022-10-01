@@ -1,0 +1,29 @@
+.movies {
+  display: flex;
+  flex-direction: column;
+  padding: 0.75rem;
+  width: 18.75rem;
+}
+.movies .movie-link {
+  text-decoration: none;
+}
+.movies .movie {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+.movies .movie .movie__title {
+  color: white;
+  font-size: 1.25rem;
+  font-weight: 900;
+}
+.movies .movie .movie__genre {
+  color: #fb3640;
+  align-self: center;
+}
+.movies .movie:hover {
+  background-color: #1d2024;
+  border-radius: 1rem;
+}
