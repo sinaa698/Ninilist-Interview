@@ -4,10 +4,16 @@
   .col();
   padding: 0.75rem;
   width: 18.75rem;
+  cursor: pointer;
+
+  .movie-link {
+    text-decoration: none;
+  }
 
   .movie {
     .row();
     gap: 1.5rem;
+    padding: 0.5rem;
 
     .movie__title {
       color: white;
@@ -17,6 +23,12 @@
 
     .movie__genre {
       color: @red;
+      align-self: center;
+    }
+
+    &:hover {
+      background-color: @hoveredBlack;
+      border-radius: 1rem;
     }
   }
 }
