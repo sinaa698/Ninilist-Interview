@@ -29,7 +29,7 @@ const MainPage = () => {
   }, [debouncedResults]);
 
   return (
-    <div className="main-page">
+    <div className="search-bar">
       <SearchBox onChange={debouncedResults} />
       <Movies movies={movies} />
     </div>

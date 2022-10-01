@@ -12,3 +12,15 @@ code {
   font-family: "Vazir", source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+@media screen and (max-width: 768px) {
+  * {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 568px) {
+  * {
+    font-size: 8px;
+  }
+}
