@@ -15,7 +15,7 @@ const MainPage = () => {
     if (searchInput.length < 3) return;
 
     const fetchedMovies = await getMoviesByQuery(searchInput);
-    setMovies(fetchedMovies.data);
+    setMovies(fetchedMovies?.data);
   }, []);
 
   const debouncedResults = useMemo(() => {
